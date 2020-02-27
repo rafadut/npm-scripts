@@ -1,0 +1,27 @@
+{
+  "name": "super-cool-package",
+  "version": "1.0.0",
+  "description": "npm scripts",
+  "main": "index.js",
+  "scripts": {
+    "test": "teste",
+	"say-hello": "echo 'Hello World'",
+	"awesome-npm": "npm run say-hello && echo 'echo NPM is awesome!'",
+	"clean": "rm -r dist && mkdir dist",
+	"prebuild": "npm run clean"
+	"build": "npm run clean && webpack",
+	"js-add": "node add.js",
+	"presay-hello": "echo 'I run before say-hello'",
+	"postsay-hello": "echo 'I run after say-hello'"
+  },
+  "repository": {
+    "type": "git",
+    "url": "repo"
+  },
+  "keywords": [
+    "npm",
+    "scripts"
+  ],
+  "author": "rafael oliveira",
+  "license": "ISC"
+}
